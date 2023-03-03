@@ -14,50 +14,50 @@
         purs-nix = inputs.purs-nix { inherit system; };
 
         ps = purs-nix.purs {
-          dependencies = with purs-nix.ps-pkgs; [
-            aff
-            affjax
-            affjax-web
-            argonaut-core
-            arrays
-            bifunctors
-            codec
-            codec-argonaut
-            datetime
-            debug
-            dom-indexed
-            effect
-            either
-            enums
-            foldable-traversable
-            formatters
-            halogen
-            halogen-formless
-            halogen-store
-            http-methods
-            lists
-            maybe
-            newtype
-            now
-            ordered-collections
-            parallel
-            precise-datetime
-            prelude
-            profunctor
-            profunctor-lenses
-            remotedata
-            routing
-            routing-duplex
-            safe-coerce
-            slug
-            strings
-            transformers
-            tuples
-            typelevel-prelude
-            web-events
-            web-html
-            web-storage
-            web-uievents
+          dependencies = [
+            "aff"
+            "affjax"
+            "affjax-web"
+            "argonaut-core"
+            "arrays"
+            "bifunctors"
+            "codec"
+            "codec-argonaut"
+            "datetime"
+            "debug"
+            "dom-indexed"
+            "effect"
+            "either"
+            "enums"
+            "foldable-traversable"
+            "formatters"
+            "halogen"
+            "halogen-formless"
+            "halogen-store"
+            "http-methods"
+            "lists"
+            "maybe"
+            "newtype"
+            "now"
+            "ordered-collections"
+            "parallel"
+            "precise-datetime"
+            "prelude"
+            "profunctor"
+            "profunctor-lenses"
+            "remotedata"
+            "routing"
+            "routing-duplex"
+            "safe-coerce"
+            "slug"
+            "strings"
+            "transformers"
+            "tuples"
+            "typelevel-prelude"
+            "web-events"
+            "web-html"
+            "web-storage"
+            "web-uievents"
           ];
 
           dir = ./.;
